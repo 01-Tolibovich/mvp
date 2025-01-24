@@ -1,0 +1,9 @@
+@import "./variables.scss";
+
+body {
+  color: $text-color;
+  overflow-x: hidden;
+  a {
+    color: $text-color
+  }
+}

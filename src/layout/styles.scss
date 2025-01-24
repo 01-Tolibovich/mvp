@@ -1,0 +1,8 @@
+@import "../styles/mixins.scss";
+
+.layout {
+  .content {
+    @include container();
+    @include contentMinHeigth()
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../styles/variables.scss";
+
+.reset-password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: $content-min-height;
+
+  .form-wrapper {
+    width: 100%;
+
+    .ant-flex {
+      align-items: center;
+    }
+
+    .enter-the-code {
+      margin: 0;
+    }
+  }
+}

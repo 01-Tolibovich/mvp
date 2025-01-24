@@ -1,0 +1,52 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.head-filters-button {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 3fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  @include mediaMax($xl) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mediaMax($lg) {
+    grid-template-columns: 1fr;
+  }
+
+  .date-picker {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.88);
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
+
+    @include mediaMax($md) {
+      grid-template-columns: 1fr;
+      padding: 10px;
+    }
+
+    p {
+      margin: 0 0 0 10px;
+      align-items: center;
+    }
+
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+  }
+}
+
+.table-wrap {
+  overflow: auto;
+  .table {
+    min-width: 1200px;
+  }
+}
