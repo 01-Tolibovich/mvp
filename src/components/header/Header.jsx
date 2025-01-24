@@ -17,7 +17,7 @@ export const Header = () => {
     {
       icon: <BsInfoCircle />,
       text: "О нас",
-      link: "/about-us",
+      link: "/mvp/about-us",
     },
   ];
 
@@ -25,13 +25,13 @@ export const Header = () => {
     navLink.push({
       icon: <AiOutlineLogin />,
       text: "Вход",
-      link: "/login",
+      link: "/mvp/login",
     });
   } else {
     navLink.unshift({
       icon: <TbReportAnalytics />,
       text: "Отчёты",
-      link: "/",
+      link: "/mvp",
     });
   }
 
@@ -60,7 +60,7 @@ export const Header = () => {
           <ul className="header-links">
             {navLink.map((item) => (
               <li key={Math.random()}>
-                <NavLink className="header-link" to={item.link}>
+                <NavLink className={`header-link `} to={item.link} end>
                   <span>{item.icon}</span>
                   <span>{item.text}</span>
                 </NavLink>

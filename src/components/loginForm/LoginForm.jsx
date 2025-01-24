@@ -23,7 +23,7 @@ export const LoginForm = () => {
         });
       });
 
-      navigate("/", { replace: true });
+      navigate("/mvp", { replace: true });
     } else {
       api.info({
         message: "Ошибка входа",
@@ -92,7 +92,7 @@ export const LoginForm = () => {
         >
           <Flex justify="space-between" align="center" >
             <Checkbox>Запомнить меня</Checkbox>
-            <Typography.Paragraph onClick={() => navigate("/reset-password")} className="forget-the-password">Забыли пароль?</Typography.Paragraph>
+            <Typography.Paragraph onClick={() => navigate("/mvp/reset-password")} className="forget-the-password">Забыли пароль?</Typography.Paragraph>
           </Flex>
         </Form.Item>
 

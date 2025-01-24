@@ -7,12 +7,11 @@ import {
 import { Layout } from "../layout";
 import PrivateRoute from "./PrivateRoute";
 import { AboutUsPage, LoginPage, NotFoundPage, ReportsPage, ResetPassword } from "../pages";
-import App from "../pages/App";
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/" element={<Layout />}>
+      <Route path="/mvp" element={<Layout />}>
         <Route
           index
           element={
@@ -21,11 +20,9 @@ const routes = createBrowserRouter(
             </PrivateRoute>
           }
         />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/about-us" element={<AboutUsPage />} />
-        <Route path="/reset-password" element={<ResetPassword />} />
-
-        <Route path="/app" element={<App />} />
+        <Route path="/mvp/login" element={<LoginPage />} />
+        <Route path="/mvp/about-us" element={<AboutUsPage />} />
+        <Route path="/mvp/reset-password" element={<ResetPassword />} />
       </Route>
       <Route path="*" element={<NotFoundPage />} />
     </>

@@ -10,7 +10,7 @@ export const NotFoundPage = () => {
       title="404"
       subTitle="Извените, страница не существует"
       extra={
-        <Button onClick={() => navigate("/", { replace: true })} type="primary">
+        <Button onClick={() => navigate("/mvp", { replace: true })} type="primary">
           Назад в главную страницу
         </Button>
       }
